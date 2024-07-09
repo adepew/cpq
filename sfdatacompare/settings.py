@@ -101,7 +101,7 @@ USE_L10N = True
 USE_TZ = True
 
 POSTMARK_API_KEY     = os.environ.get('POSTMARK_API_KEY')
-POSTMARK_SENDER      = 'ben@edwards.nz'
+POSTMARK_SENDER      = 'adepew@live.com'
 POSTMARK_TEST_MODE   = False
 POSTMARK_TRACK_OPENS = False
 
