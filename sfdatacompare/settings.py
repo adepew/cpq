@@ -17,7 +17,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'LOCAL')
 DEBUG = os.environ.get('DEBUG') == '1' 
 
 ADMINS = (
-    ('Ben Edwards', 'ben@edwards.nz'),
+    ('Alan DePew', 'adepew@live.com'),
 )
 
 if IS_HEROKU:
@@ -51,7 +51,7 @@ MIDDLEWARE = [
 
 SECURE_CROSS_ORIGIN_OPENER_POLICY = None
 
-ROOT_URLCONF = 'sfdatacompare.urls'
+ROOT_URLCONF = 'cpq.urls'
 
 TEMPLATES = [
     {
@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'sfdatacompare.wsgi.application'
+WSGI_APPLICATION = 'cpq.wsgi.application'
 
 MAX_CONN_AGE = 600
 
@@ -108,7 +108,7 @@ POSTMARK_TRACK_OPENS = False
 # SALESFORCE KEYS
 SALESFORCE_CONSUMER_KEY = os.environ.get('SALESFORCE_CONSUMER_KEY')
 SALESFORCE_CONSUMER_SECRET = os.environ.get('SALESFORCE_CONSUMER_SECRET')
-SALESFORCE_REDIRECT_URI = 'https://sfdatacompare.herokuapp.com/oauth-response'
+SALESFORCE_REDIRECT_URI = 'https://cpq.herokuapp.com/oauth-response'
 SALESFORCE_API_VERSION = int(os.environ.get('SALESFORCE_API_VERSION', '55'))
 
 # Static files (CSS, JavaScript, Images)
